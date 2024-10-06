@@ -37,8 +37,9 @@ const Home = () => {
   return (
     <div className="container mx-auto">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-600 to-blue-900 text-white py-16 mb-3 rounded-lg shadow-lg">
-        <div className="container mx-auto text-center ">
+      {/* <section className="bg-gradient-to-r from-blue-600 to-blue-900 text-white py-20 mb-3 rounded-lg shadow-lg"> */}
+      <section className="bg-[url('/images/bg-wave.jpg')] bg-cover bg-center text-white py-20 mb-3 rounded-lg shadow-lg">
+        <div className="container mx-auto text-center">
           <h2 className="text-5xl font-bold mb-4">Empowering Your Business</h2>
           <p className="text-xl mb-6">
             We provide innovative software solutions to help you stand out in the digital age.
@@ -80,11 +81,11 @@ const Home = () => {
           <h3 className="text-3xl font-bold mb-8">Our Services</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {allServices.map((service, index) => (
-              <div key={index} className="rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-105">
+              <div key={index} className="relative rounded-lg shadow-lg overflow-hidden transform transition duration-500 hover:scale-105">
                 <img
                   src={service.image}
                   alt={service.title}
-                  className="mx-auto mb-4 w-16 h-16"
+                  className="w-full h-48 object-cover"
                 />
                 <div className="p-6">
                   <h4 className="text-2xl font-semibold mb-4">{service.title}</h4>

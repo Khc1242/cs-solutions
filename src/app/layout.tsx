@@ -100,12 +100,14 @@ export default function RootLayout({
         </header>
 
         {/* Main Content */}
-        <main className="px-4 mx-auto flex-grow mt-20 mb-5">{children}</main>
+        <main className="px-4 mx-auto flex-grow mt-20">{children}</main>
         {/* <main className="container mx-auto flex-grow mt-20 mb-5 px-4 sm:px-0">{children}</main> */}
 
         {/* Footer */}
-        <footer className="text-blue-600 p-4 text-center mt-auto font-semibold">
-          &copy; {new Date().getFullYear()} CS-Solutions
+        <footer className="text-white p-5 mt-auto flex justify-center">
+          <div className="bg-blue-600 border-solid border-blue-600 rounded-full max-w-max px-2 py-1 text-sm">
+            &copy; {new Date().getFullYear()} CS-Solutions Sdn Bhd. All rights reserved.
+          </div>
         </footer>
       </body >
     </html >
